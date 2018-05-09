@@ -82,6 +82,7 @@ export default class AgendaView extends Component {
 
   constructor(props) {
     super(props);
+    this.scrollPadStyle = props.scrollPadStyle || {};
     this.styles = styleConstructor(props.theme);
     const windowSize = Dimensions.get('window');
     this.viewHeight = windowSize.height;
@@ -356,6 +357,7 @@ export default class AgendaView extends Component {
       height: KNOB_HEIGHT,
       top: scrollPadPosition,
       left: (this.viewWidth - 80) / 2,
+      ...this.props.scrollPadStyle
     };
 
     let knob = (<View style={this.styles.knobContainer}/>);
