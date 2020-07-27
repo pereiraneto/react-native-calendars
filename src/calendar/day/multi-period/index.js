@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { TouchableOpacity, Text, View } from 'react-native';
+import { Text, View } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
 import PropTypes from 'prop-types';
 import {shouldUpdate} from '../../../component-updater';
 
